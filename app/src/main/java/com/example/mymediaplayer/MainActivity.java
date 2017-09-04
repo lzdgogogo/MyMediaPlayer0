@@ -166,14 +166,6 @@ public class MainActivity extends AppCompatActivity {
         FindSongs finder = new FindSongs();
         mp3Infos = finder.getMp3Infos(MainActivity.this.getContentResolver());
         finder.setListAdpter(getApplicationContext(),mp3Infos,mListView);
-
-//        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-//            @Override
-//            public void onCompletion(MediaPlayer mediaPlayer) {
-//                nextSong();
-//            }
-//        });
-
     }
 
 
@@ -253,11 +245,6 @@ public class MainActivity extends AppCompatActivity {
             });
 
             setSongName();
-
-
-//            lrcView.setIndex(lrcIndex());
-//            lrcView.invalidate();
-
             handler.postDelayed(runnable, 100);
         }
     };
@@ -492,11 +479,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    
 
 
 
 
 
+    
+    
+    
 
     //判断程序是否处于后台
     private boolean isApplicationBroughtToBackground() {
@@ -515,6 +506,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    
+    
+    
+    
+    
+    
+    
+    
 
     // 动态权限申请
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
